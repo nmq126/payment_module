@@ -7,11 +7,15 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class OrderDto {
+public class PaymentDto {
 
     private Long orderId;
     private Long userId;
-    private double totalPrice;
     private int checkOut;
-    private int status;
+    private String message;
+
+    public PaymentDto(Long orderId, Long userId) {
+        this.orderId = orderId;
+        this.userId = userId;
+    }
 }
