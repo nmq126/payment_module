@@ -17,8 +17,8 @@ public class ReceiveMessage {
 
     @RabbitListener(queues = {QUEUE_ORDER})
     public void getInfoOrder(OrderDto orderDto) {
-        balletController.handlerPayment(orderDto);
         System.out.println("Module Payment nhận thông tin order: " + orderDto);
+        balletController.handlerPayment(orderDto);
     }
 
 }
