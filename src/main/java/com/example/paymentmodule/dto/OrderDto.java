@@ -12,7 +12,8 @@ public class OrderDto {
     private Long orderId;
     private Long userId;
     private double totalPrice;
-    private int checkOut;
-    private int status;
+    private String paymentStatus;
+    private String orderStatus;
+
     private String device_token;
 }
